@@ -22,8 +22,9 @@
     <div class="headerInner">
         <nav>
             <ul class="navList">
+                <li><a href="/">Top</a></li>
                 <li><a href="https://djduct.bandcamp.com/" target="_blank">Bandcamp</a></li>
-                <li><a href="mailto:djduct@gmail.com" target="_blank">Contact</a></li>
+                <li><a href="#">Contact</a></li>
             </ul>
         </nav>
     </div>
@@ -33,23 +34,35 @@
         <h2>Contact</h2>
         <form name="contact" method="post" netlify>
             <dl>
-                <dt>Your Name:</dt>
+                <dt>お名前</dt>
                 <dd>
                     <label>
-                        <input type="text" name="name" id="">
+                        <input type="text" name="お名前" id="">
                     </label>
                 </dd>
-                <dt>Your Email:</dt>
+                <dt>メールアドレス</dt>
                 <dd>
                     <label>
-                        <input type="text" name="email" id="">
+                        <input type="text" name="メールアドレス" id="">
                     </label>
                 </dd>
-                <dt>Message:</dt>
+                <dt>ご連絡可能な電話番号 ※任意</dt>
                 <dd>
                     <label>
-                        <textarea name="message" id="" cols="30" rows="10"></textarea>
+                        <input type="text" name="ご連絡可能な電話番号" id="">
                     </label>
+                </dd>
+                <dt>お問い合わせ種別</dt>
+                <dd>
+                    <select name="お問い合わせ種別[]" id="">
+                        <option value="">選択してください</option>
+                        <option value="">ブッキング</option>
+                        <option value="">その他</option>
+                    </select>
+                </dd>
+                <dt>お問い合わせ内容</dt>
+                <dd>
+                    <textarea name="お問い合わせ内容" id="" cols="30" rows="10"></textarea>
                 </dd>
             </dl>
             <div>
