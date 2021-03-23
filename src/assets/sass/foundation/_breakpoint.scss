@@ -1,0 +1,21 @@
+$bp-tablet: 1024px;
+$bp-sp: 768px;
+$bp-iphone: 320px;
+
+@mixin media($media-width){
+  @if $media-width == sp {
+    @media only screen and (max-width: $bp-sp){
+      @content;
+    }
+  }
+  @else if $media-width == iphone {
+    @media only screen and (max-width: $bp-iphone){
+      @content;
+    }
+  }
+  @else if $media-width == tablet {
+    @media only screen and (max-width: $bp-tablet){
+      @content;
+    }
+  }
+}

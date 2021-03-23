@@ -1,0 +1,29 @@
+// -----------------------------------------------------------------
+// Primary Brand Color
+// -----------------------------------------------------------------
+
+// ブランドの中心となるブランドカラー
+
+$primary-brand-color: #00C4CC;
+
+// -----------------------------------------------------------------
+// Secondary Brand Colors
+// -----------------------------------------------------------------
+
+// Primary Brand Colorを引き立たせるブランドカラー
+
+$secondary-brand-color-black: #23221F;
+$secondary-brand-color-white: #FFFFFF;
+$secondary-brand-color-orange: #FF9900;
+
+// -----------------------------------------------------------------
+// Extended Colors
+// -----------------------------------------------------------------
+
+// Primary Brand Color、Secondary Brand Colorと調和するカラー
+// 説明/表現する際に必要な要素（テキスト、イラスト、背景など）で、Extended Colorsを用いることで、ブランドカラーを引き立たせる
+
+$extended-colors-stone01: #F8F7F6;
+$extended-colors-stone02: #EDEBE6;
+$extended-colors-stone03: #AAA69F;
+$extended-colors-stone04: #4E4C49;
