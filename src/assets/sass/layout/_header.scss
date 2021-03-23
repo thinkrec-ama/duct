@@ -1,10 +1,18 @@
 .headerWrap {
   width: 100%;
   box-sizing: border-box;
-  padding: 20px 0;
+  padding: 40px 0 0;
+
+  @include media(sp) {
+    padding: 20px 0 0;
+  }
 }
 .headerInner {
-  padding: 0 20px;
+  padding: 0 50px;
+
+  @include media(sp) {
+    padding: 0 20px;
+  }
 }
 .navList {
   display: flex;
@@ -12,12 +20,19 @@
 
   > li {
     a {
+      font-size: 12px;
       text-decoration: none;
       font-weight: bold;
+      transition: 1.0s;
+      color: #FF9900;
+
+      &:hover {
+        color: #4E4C49;
+      }
     }
   }
 
   > li + li {
-    margin-left: 20px;
+    margin-left: 30px;
   }
 }

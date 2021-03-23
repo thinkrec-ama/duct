@@ -15,6 +15,10 @@
 	> img {
 		width: 150px;
 
+		@include media(sp) {
+			width: 100px;
+		}
+
 		&.fadeUp {
 			animation-name: fadeUpAnime;
 			animation-duration: 0.5s;
@@ -47,5 +51,9 @@
 
 	> img {
 		width: 100%;
+
+		@include media(sp) {
+			width: 300px;
+		}
 	}
 }
