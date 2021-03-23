@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact | DJ DUCT</title>
+    <meta name="keywords" content="DJ,DJ DUCT,ダクト,THINKREC,プロデューサー,音楽レーベル,ONE TURNTABLE,ワン・ターンテーブリスト,Underground Gallery">
+    <meta name="description" content="DJ DUCT - サンプラーやエフェクターを効果的に使い、超絶なスクラッチを駆使しながらも、たった一台のターンテーブルでプレイするという、 その全くもってユニークなライブ・スタイルでトーキョー・アンダーグラウンドを席巻し、今や世界のアンダーグラウンド・シーンでも名を馳せる孤高の無頼派。DJ DUCTブッキングに関しましては、djduct@thinkrec.comまでご連絡ください。">
+    <meta property="og:title" content="THINKREC.">
+    <meta property="og:description" content="DJ DUCT - サンプラーやエフェクターを効果的に使い、超絶なスクラッチを駆使しながらも、たった一台のターンテーブルでプレイするという、 その全くもってユニークなライブ・スタイルでトーキョー・アンダーグラウンドを席巻し、今や世界のアンダーグラウンド・シーンでも名を馳せる孤高の無頼派。DJ DUCTブッキングに関しましては、djduct@thinkrec.comまでご連絡ください。">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="ja_JP">
+    <meta property="og:url" content="https://www.djduct.com/">
+    <meta property="og:image" content="https://www.djduct.com/images/common/og_thinkrec.png">
+    <meta property="og:site_name" content="DJ DUCT | THINKREC.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="canonical" href="https://www.djduct.com/">
+    <link rel="shortcut icon" href="/images/common/favicon.ico">
+    <link rel="stylesheet" href="/css/style.min.css">
+</head>
+<body>
+<%- include('layout/_header.ejs') %>
+<div>
+    <div>
+        <h2>Contact</h2>
+        <form name="contact" method="post" netlify>
+            <dl>
+                <dt>Your Name:</dt>
+                <dd>
+                    <label>
+                        <input type="text" name="name" id="">
+                    </label>
+                </dd>
+                <dt>Your Email:</dt>
+                <dd>
+                    <label>
+                        <input type="text" name="email" id="">
+                    </label>
+                </dd>
+                <dt>Message:</dt>
+                <dd>
+                    <label>
+                        <textarea name="message" id="" cols="30" rows="10"></textarea>
+                    </label>
+                </dd>
+            </dl>
+            <div>
+                <button type="submit">Send</button>
+            </div>
+        </form>
+    </div>
+</div>
+<%- include('layout/_footer') %>
+<script type="text/javascript" src="/js/libs/jquery-3.6.0.min.js"></script>
+</body>
+</html>
