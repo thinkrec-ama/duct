@@ -20,11 +20,15 @@
 
   > li {
     a {
-      font-size: 15px;
+      font-size: 18px;
       text-decoration: none;
       font-weight: bold;
       transition: 1.0s;
       color: #333;
+
+      @include media(sp) {
+        font-size: 15px;
+      }
 
       &:hover {
         color: #4E4C49;
