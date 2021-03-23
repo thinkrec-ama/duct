@@ -1,0 +1,23 @@
+.headerWrap {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 20px 0;
+}
+.headerInner {
+  padding: 0 20px;
+}
+.navList {
+  display: flex;
+  justify-content: flex-end;
+
+  > li {
+    a {
+      text-decoration: none;
+      font-weight: bold;
+    }
+  }
+
+  > li + li {
+    margin-left: 20px;
+  }
+}

@@ -1,11 +1,3 @@
-@import "color";
-@import "font";
-
-body {
-	background: $extended-colors-stone01;
-	color: $secondary-brand-color-black;
-	font-size: $base-font-size;
-}
 .loadingWrap {
 	position: fixed;
 	width: 100%;
@@ -16,12 +8,12 @@ body {
 }
 .loadingLogoWrap {
 	position: absolute;
-	top: 50%;
+	top: 40%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 
 	> img {
-		width: 100%;
+		width: 150px;
 
 		&.fadeUp {
 			animation-name: fadeUpAnime;
@@ -39,5 +31,21 @@ body {
 				transform: translateY(0);
 			}
 		}
+	}
+}
+.kvImageWrap {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+}
+.kvImage {
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+
+	> img {
+		width: 100%;
 	}
 }
