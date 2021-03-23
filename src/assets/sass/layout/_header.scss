@@ -1,7 +1,7 @@
 .headerWrap {
   width: 100%;
   box-sizing: border-box;
-  padding: 40px 0 0;
+  padding: 50px 0 0;
 
   @include media(sp) {
     padding: 20px 0 0;
@@ -16,15 +16,15 @@
 }
 .navList {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
 
   > li {
     a {
-      font-size: 12px;
+      font-size: 15px;
       text-decoration: none;
       font-weight: bold;
       transition: 1.0s;
-      color: #FF9900;
+      color: #333;
 
       &:hover {
         color: #4E4C49;
