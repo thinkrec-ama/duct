@@ -1,0 +1,99 @@
+.contactBody {
+  background: #F6F6F6;
+}
+.contactWrap {
+  width: 1020px;
+  margin: 50px auto 0;
+  padding-bottom: 50px;
+
+  @include media(sp) {
+    width: calc((100% - 30px));
+  }
+}
+.contactHeadline {
+  .headline {
+    font-weight: bold;
+    font-size: 40px;
+
+    @include media(sp) {
+      font-size: 30px;
+    }
+  }
+  .jaHeadline {
+    margin-top: 10px;
+    padding-left: 10px;
+    font-size: 20px;
+    font-weight: bold;
+
+    @include media(sp) {
+      font-size: 15px;
+      padding-left: 5px;
+    }
+  }
+}
+.contactFormWrap {
+  margin-top: 20px;
+  padding: 50px 30px;
+  background: #FFF;
+  border-radius: 5px;
+
+  @include media(sp) {
+    padding: 30px 15px;
+  }
+}
+.formItem {
+  > dt {
+    font-size: 15px;
+    font-weight: bold;
+    & ~ dt {
+      margin-top: 20px;
+    }
+  }
+  > dd {
+    margin-top: 10px;
+  }
+}
+.formInputText {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 20px;
+  background: #F6F6F6;
+  border-radius: 10px;
+  border: 0;
+}
+.formSelectBox {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 20px;
+  background: #F6F6F6;
+  border-radius: 10px;
+  border: 0;
+}
+.formTextarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 20px;
+  background: #F6F6F6;
+  border-radius: 10px;
+  border: 0;
+}
+.submitButtonWrap {
+  margin-top: 20px;
+  text-align: center;
+}
+.submitButton {
+  width: 200px;
+  border-radius: 50px;
+  font-size: 15px;
+  font-weight: bold;
+  transition: 1.0s;
+  background: #FF9900;
+  color: #FFFFFF;
+  border: 0;
+  padding: 10px 20px;
+  cursor: pointer;
+
+  &:hover {
+    background: #ffc062;
+  }
+}

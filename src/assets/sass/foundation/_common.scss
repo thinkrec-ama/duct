@@ -1,7 +1,7 @@
 body {
 	font-family: DM Sans,dnp-shuei-gothic-kin-std,sans-serif;
+	font-size: 12px;
 }
-
 .loadingWrap {
 	position: fixed;
 	width: 100%;
@@ -22,7 +22,6 @@ body {
 		@include media(sp) {
 			width: 100px;
 		}
-
 		&.fadeUp {
 			animation-name: fadeUpAnime;
 			animation-duration: 0.5s;
