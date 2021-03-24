@@ -62,6 +62,19 @@
   border: 0;
   font-size: 15px;
 }
+.label {
+  position: relative;
+  display: block;
+
+  &::after {
+    content: "▼";
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: block;
+    color: #333;
+  }
+}
 .formSelectBox {
   width: 100%;
   box-sizing: border-box;
@@ -70,6 +83,9 @@
   border-radius: 10px;
   border: 0;
   font-size: 15px;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
 }
 .formTextarea {
   width: 100%;
