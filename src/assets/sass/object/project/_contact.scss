@@ -73,6 +73,10 @@
     right: 20px;
     display: block;
     color: #333;
+
+    @include media(sp) {
+      display: none;
+    }
   }
 }
 .formSelectBox {
