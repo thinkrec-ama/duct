@@ -120,3 +120,7 @@
     background: #ffc062;
   }
 }
+input::placeholder,
+textarea::placeholder {
+  color: #CCC;
+}
