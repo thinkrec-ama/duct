@@ -1,42 +1,72 @@
 .headerWrap {
-  width: 100%;
-  box-sizing: border-box;
-  padding: 50px 0 0;
+  padding: 10px 20px;
 
   @include media(sp) {
-    padding: 20px 0 0;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 5px 20px;
   }
 }
 .headerInner {
-  padding: 0 50px;
+  display: flex;
+  align-items: center;
 
   @include media(sp) {
-    padding: 0 20px;
+    justify-content: space-between;
+  }
+}
+.headerLogoWrap {
+  margin-right: 60px;
+
+  & > a {
+    display: block;
+
+    & > img {
+      width: 70px;
+      height: auto;
+
+      @include media(sp) {
+        width: 60px;
+      }
+    }
   }
 }
 .navList {
   display: flex;
-  justify-content: center;
+  align-items: center;
 
-  > li {
-    a {
-      font-size: 18px;
+  & > li {
+
+    & > a {
+      position: relative;
+      display: block;
       text-decoration: none;
-      font-weight: bold;
-      transition: 1.0s;
       color: #333;
+      padding-bottom: 5px;
+      font-size: 15px;
 
-      @include media(sp) {
-        font-size: 15px;
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 10%;
+        width: 80%;
+        height: 1px;
+        background: #333;
+        transition: all .3s;
+        transform: scale(0, 1);
+        transform-origin: left top;
       }
-
       &:hover {
-        color: #4E4C49;
+        color: #333;
+
+        &::after {
+          transform: scale(1, 1);
+        }
       }
     }
-  }
-
-  > li + li {
-    margin-left: 30px;
+    & + li {
+      margin-left: 30px;
+    }
   }
 }
