@@ -23,7 +23,7 @@
   font-size: 10px;
 
   @include media(sp) {
-    margin-top: 5px;
+    display: none;
   }
 
   & > .bld {
