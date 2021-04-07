@@ -1,0 +1,27 @@
+.profileWrap {
+  width: 800px;
+  margin: 30px auto 0;
+
+  @include media(sp) {
+    width: calc((100% - 40px));
+    padding-bottom: 50px;
+  }
+}
+.profile {
+
+  & > dt {
+    font-weight: bold;
+    font-size: 15px;
+  }
+  & > dd {
+    margin-top: 15px;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 1.5;
+    text-align: justify;
+
+    & ~ dd {
+      margin-top: 30px;
+    }
+  }
+}

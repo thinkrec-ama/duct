@@ -4,7 +4,7 @@
   @include media(sp) {
     width: 100%;
     box-sizing: border-box;
-    padding: 5px 20px;
+    padding: 5px 10px;
   }
 }
 .headerInner {
@@ -12,11 +12,16 @@
   align-items: center;
 
   @include media(sp) {
-    justify-content: space-between;
+    display: block;
   }
 }
 .headerLogoWrap {
   margin-right: 60px;
+
+  @include media(sp) {
+    margin: 0;
+    text-align: center;
+  }
 
   & > a {
     display: block;
@@ -29,6 +34,13 @@
         width: 60px;
       }
     }
+  }
+}
+.nav {
+  @include media(sp) {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
   }
 }
 .navList {
