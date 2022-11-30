@@ -32,7 +32,7 @@
   }
 }
 .contactFormWrap {
-  margin-top: 20px;
+  margin-top: 30px;
   padding: 50px 30px;
   background: #FFF;
   border-radius: 5px;
@@ -56,11 +56,12 @@
 .formInputText {
   width: 100%;
   box-sizing: border-box;
-  padding: 20px;
+  padding: 15px;
   background: #F6F6F6;
-  border-radius: 10px;
+  border-radius: 3px;
   border: 0;
   font-size: 15px;
+  border: 1px solid #999999;
 }
 .label {
   position: relative;
@@ -94,30 +95,33 @@
 .formTextarea {
   width: 100%;
   box-sizing: border-box;
-  padding: 20px;
+  padding: 15px;
   background: #F6F6F6;
-  border-radius: 10px;
+  border-radius: 3px;
   border: 0;
   font-size: 15px;
+  border: 1px solid #999999;
 }
 .submitButtonWrap {
-  margin-top: 20px;
+  margin-top: 30px;
   text-align: center;
 }
 .submitButton {
   width: 200px;
-  border-radius: 50px;
   font-size: 15px;
   font-weight: bold;
-  transition: 1.0s;
-  background: #FF9900;
+  transition: 0.3s;
   color: #FFFFFF;
   border: 0;
   padding: 10px 20px;
   cursor: pointer;
+  background: none;
+  border: 2px solid #333333;
+  color: #333333;
 
   &:hover {
-    background: #ffc062;
+    background: #333333;
+    color: #FFFFFF;
   }
 }
 input::placeholder,
