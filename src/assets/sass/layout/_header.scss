@@ -1,10 +1,11 @@
 .headerWrap {
-  padding: 10px 20px;
+  padding: 20px 30px;
+  background: #FFFFFF;
 
   @include media(sp) {
     width: 100%;
     box-sizing: border-box;
-    padding: 5px 10px;
+    padding: 20px 10px;
   }
 }
 .headerInner {
@@ -16,7 +17,7 @@
   }
 }
 .headerLogoWrap {
-  margin-right: 60px;
+  margin-right: 35px;
 
   @include media(sp) {
     margin: 0;
@@ -27,18 +28,18 @@
     display: block;
 
     & > img {
-      width: 70px;
+      width: 150px;
       height: auto;
 
       @include media(sp) {
-        width: 60px;
+        width: 130px;
       }
     }
   }
 }
 .nav {
   @include media(sp) {
-    margin-top: 10px;
+    margin-top: 30px;
     display: flex;
     justify-content: center;
   }

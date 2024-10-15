@@ -10,6 +10,10 @@
   left: 50%;
   transform: translate(-50%, -50%);
 
+  @include media(sp) {
+    top: 15%;
+  }
+
   > img {
     width: 1000px;
 

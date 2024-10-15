@@ -12,11 +12,15 @@
 	left: 50%;
 	transform: translate(-50%, -50%);
 
+	@include media(sp) {
+		top: 35%;
+	}
+
 	> img {
-		width: 180px;
+		width: 300px;
 
 		@include media(sp) {
-			width: 100px;
+			width: 200px;
 		}
 		&.fadeUp {
 			animation-name: fadeUpAnime;
