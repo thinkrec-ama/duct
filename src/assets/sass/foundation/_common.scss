@@ -13,7 +13,7 @@
 	transform: translate(-50%, -50%);
 
 	> img {
-		width: 180px;
+		width: 300px;
 
 		@include media(sp) {
 			width: 100px;
